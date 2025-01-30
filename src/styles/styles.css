@@ -1,0 +1,248 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.utils ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color del texto del padre (li) */
+    font-weight: bold; /* Opcional: hace que el texto sea más llamativo */
+}
+
+body {
+    font-family: 'Arvo', sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.banner {
+    background-color: #26a69a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+.utils ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.utils li {
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.utils li:hover {
+    text-decoration: underline;
+}
+
+.division {
+    background-color: #c7c1b0;
+    width: 100%;
+    height: 4px;;
+}
+
+.body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoPersonal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.img {
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.data {
+    text-align: left;
+}
+
+.data p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.data a {
+    color: #26a69a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.data a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #26a69a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00796b;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #004d40;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+}
+
+
+.social-links a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+.aboutme {
+    display: inline-block;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #26a69a;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Arvo', sans-serif;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: auto; /* Ajusta el alto máximo si el texto es largo */
+}
+
+.container-aboutme{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 10px; /* Espacio entre tarjetas */
+    max-width: auto; /* Máximo ancho */
+    margin: 0 auto; /* Centrar */
+}
+.about-me {
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.experience{
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.skills{
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.formation{
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.projects{
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .utils ul {
+        flex-direction: column;
+    }
+
+    .utils li {
+        margin: 5px 0;
+    }
+
+    .infoPersonal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .data p {
+        font-size: 0.9rem;
+    }
+}
