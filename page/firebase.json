@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "portafoliio-ds",
     "public": ".",
     "ignore": [
       "firebase.json",
