@@ -1,214 +1,183 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="es">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Elizondo | Data Science Portfolio</title>
   <link rel="stylesheet" href="./src/styles/styles.css">
-  <link rel="stylesheet" href="./src/styles/skills.css">
-  <link rel="stylesheet" href="./src/styles/experience.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link rel="icon" type="image/png" href="src/images/pag_icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
+  <!-- Animaciones y modo oscuro -->
 </head>
-
 <body>
-  <div class="banner">
-    <h1>Dylan Elizondo Alvarado</h1>
-    <div class="utils">
-      <div class="utils">
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#formacion">Formación</a></li>
-        </ul>
+  <!-- Barra de navegación sticky -->
+  <nav class="navbar">
+    <div class="navbar__logo">Dylan Elizondo Alvarado</div>
+    <button class="navbar__burger" id="navbar-burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    <ul class="navbar__links">
+      <li><a href="#home" class="nav-link" data-es="Inicio" data-en="Home">Inicio</a></li>
+      <li><a href="#about" class="nav-link" data-es="Sobre mí" data-en="About Me">Sobre mí</a></li>
+      <li><a href="#experience" class="nav-link" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+      <li><a href="#projects" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+      <li><a href="#tools" class="nav-link" data-es="Herramientas" data-en="Tools">Herramientas</a></li>
+      <li><a href="#more-projects" class="nav-link" data-es="Otros Proyectos" data-en="More Projects">Otros Proyectos</a></li>
+      <li><a href="#contact" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a></li>
+    </ul>
+    <div class="navbar__actions">
+      <button id="lang-toggle" aria-label="Cambiar idioma">EN</button>
+      <button id="darkmode-toggle" aria-label="Modo oscuro"><span id="darkmode-icon">🌙</span></button>
     </div>
-    
-    </div>
-  </div>
-  <div class="division"></div>
+  </nav>
 
-  <div class="infoPersonal">
-    <div class="photo">
-        <img class="img" src="src/images/photo.jpg" alt="Foto de perfil">
-    </div>
-    <div class="data">    
-        <p>Dylan Elizondo Alvarado</p>
-        <p>Estudiante de Ingenieria en Sistemas, UNA</p>
-        <p>Correo: <a href="mailto:dylalva1933@gmail.com">dylalva1933@gmail.com</a></p>
-        <p>Teléfono: 83042698</p>
-        <button class="button downCV">Descargar CV <span>&#128229;</span></button>
-    </div>
-    <div class="social-links">
-        <a href="https://github.com/Dylalva" target="_blank">
-            <img src="src/images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/dylan-elizondo-alvarado-148867324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank">
-            <img src="src/images/linkedin.png" alt="LinkedIn">
-        </a>
-    </div>
-</div>
-
-<div id="sobre-mi" class="about-me">
-  <h2>Sobre mí</h2>
-  <div class="container-aboutme">
-    <p class="aboutme">Soy un estudiante de tercer año en la Universidad, apasionado por el desarrollo de software y la resolución de problemas a través de la programación. Durante mi trayectoria académica, he trabajado en el desarrollo de <strong>aplicaciones de escritorio</strong> y para <strong>dispositivos móviles Android</strong>, lo que me ha permitido fortalecer mis habilidades en lógica de programación y estructuras de datos.</p>
-    <p class="aboutme">Actualmente, me encuentro aprendiendo <strong>desarrollo web</strong>, explorando tecnologías modernas para construir aplicaciones dinámicas e interactivas. Tengo experiencia con lenguajes como <strong>C++, Java y Python</strong>, y me motiva el desafío de seguir ampliando mis conocimientos en el mundo de la tecnología.</p>
-    <p class="aboutme">Mi objetivo es seguir mejorando mis habilidades y contribuir con soluciones innovadoras que tengan un impacto positivo en la sociedad.</p>
-  </div>
-</div>
-
-
-<div id="experiencia" class="experience">
-  <h2>Experiencia</h2>
-  <div class="container-experience">
-  <p class="experience-p">2 Años realizando proyectos en C++</p>
-  <p class="experience-p">1 Año realizando proyectos en Java</p>
-  <p class="experience-p">1 proyecto con kotlin</p>
-  <p class="experience-p">Juego de pacman creado con python</p>
-  </div>
-</div>
-
-<div id="habilidades" class="skills">
-  <h2>Habilidades</h2>
-  <div class="cards_container--habilidades">
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
-        <img src="./src/images/html_icon.png" alt="HTML">
-        <p>HTML 5</p>
-    </div>
-    
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
-        <img src="./src/images/kotlin_icon.png" alt="Kotlin">
-        <p>Kotlin</p>
-    </div>
-
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
-        <img src="./src/images/js_icon.png" alt="JavaScript">
-        <p>JavaScript</p>
-    </div>
-
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
-        <img src="./src/images/notion_icon.png" alt="Noción">
-        <p>Notion</p>
-    </div>
-
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
-        <img src="./src/images/python_icon.png" alt="Python">
-        <p>Python</p>
-    </div>
-
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
-        <img src="./src/images/firebase_icon.png" alt="Firebase.">
-        <p>Firebase.</p>
-    </div>
-    
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
-        <img src="./src/images/github.png" alt="GitHub">
-        <p>Github</p>
-    </div>
-
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
-        <img src="./src/images/c++_icon (2).png" alt="C++">
-        <p>c++</p>
-    </div>
-    <div class="cards--habilidades aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
-      <img src="./src/images/jaa_icon.png" alt="Java">
-      <p>Java</p>
-  </div>
-</div>
-</div>
-
-<div id="formacion" class="formation">
-  <h2>Formación</h2>
-  <div class="formation-container">
-      <div class="formation-item">
-          <img src="src/images/UNA_icon.png" alt="Universidad">
-          <p>Universidad Nacional - Ingeniería en Sistemas</p>
+  <!-- Sección Inicio -->
+  <section id="home" class="section home-section">
+    <div class="home-content">
+      <img src="src/images/photo.jpg" alt="Foto de perfil" class="profile-img">
+      <div class="home-text">
+        <h1 class="typed-title" data-es="Hola, soy Dylan Andrés Elizondo Alvarado" data-en="Hi, I'm Dylan Andrés Elizondo Alvarado">Hola, soy Dylan Andrés Elizondo Alvarado</h1>
+        <p class="subtitle" data-es="Estudiante de Ingeniería en Sistemas de Información | Ciencia de Datos" data-en="Information Systems Engineering Student | Data Science">Estudiante de Ingeniería en Sistemas de Información | Ciencia de Datos</p>
+        <div class="social-links">
+          <a href="https://github.com/Dylalva" target="_blank"><img src="src/images/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/dylan-elizondo-alvarado-148867324" target="_blank"><img src="src/images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <a href="src/CV_Dylan_Elizondo_ES.pdf" id="cv-btn" class="button main-cta" data-es="Descargar CV" data-en="Download CV" download>Descargar CV</a>
       </div>
-      <div class="formation-item">
-          <img src="src/images/udemy_icon.png" alt="Curso">
-          <p>Cursos de Desarrollo - Online</p>
+    </div>
+  </section>
+
+  <!-- Sección Sobre mí con tabs multilenguaje -->
+  <section id="about" class="section about-section">
+    <h2 data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-lang="es">ES</button>
+      <button class="tab-btn" data-lang="en">EN</button>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane active" data-lang="es">
+        <p>Hola, soy Dylan Andrés Elizondo Alvarado<br>
+        Estudiante de Ingeniería en Sistemas de Información en la Universidad Nacional de Costa Rica (UNA), apasionado por el desarrollo de software, análisis de datos y machine learning.</p>
       </div>
-  </div>
-</div>
+      <div class="tab-pane" data-lang="en">
+        <p>Hi, I'm Dylan Andrés Elizondo Alvarado<br>
+        Information Systems Engineering student at the National University of Costa Rica (UNA), passionate about software development, data analysis, and machine learning.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Sección Experiencia Destacada -->
+  <section id="experience" class="section experience-section">
+    <h2 data-es="Experiencia Destacada" data-en="Featured Experience">Experiencia Destacada</h2>
+    <ul class="experience-list">
+      <li data-es="Software Developer (Ciencia de Datos): Modelos con aprendizaje por refuerzo, regresión y clasificación con Python y NumPy." data-en="Software Developer (Data Science focus): Models with reinforcement learning, regression, and classification using Python and NumPy.">Software Developer (Ciencia de Datos): Modelos con aprendizaje por refuerzo, regresión y clasificación con Python y NumPy.</li>
+      <li data-es="Asistente Estudiantil en Estructuras Discretas: Sesiones de estudio y apoyo con Wolfram Mathematica." data-en="Student Assistant in Discrete Structures: Study sessions and support with Wolfram Mathematica.">Asistente Estudiantil en Estructuras Discretas: Sesiones de estudio y apoyo con Wolfram Mathematica.</li>
+      <li data-es="Scrum Master: Coordinación ágil y automatización de procesos." data-en="Scrum Master: Agile coordination and process automation.">Scrum Master: Coordinación ágil y automatización de procesos.</li>
+    </ul>
+  </section>
 
-<div id="proyectos" class="projects">
-  <h2>Proyectos Destacados</h2>
-  <div class="projects-container">
-      
-      <!-- Proyecto 1 -->
+  <!-- Sección Proyectos Destacados -->
+  <section id="projects" class="section projects-section">
+    <h2 data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+    <div class="projects-grid">
       <div class="project-card">
-          <img src="src/images/proyecto1.png" alt="Proyecto 1">
-          <div class="project-info">
-              <h3>Aplicación de Gestión</h3>
-              <p class="project-description">
-                  Aplicación de escritorio para gestionar inventarios, clientes y ventas en tiempo real.
-                  Hecho con Java, Intellij IDEA.
-              </p>
-              <a href="https://github.com/tuusuario/proyecto1" class="button" target="_blank">Ver Código</a>
-          </div>
+        <h3>CI/CD Pipeline</h3>
+        <p data-es="Automatiza la construcción, pruebas y despliegue de aplicaciones usando una pipeline CI/CD para un desarrollo y entrega eficiente." data-en="Automates building, testing, and deploying applications using a CI/CD pipeline for streamlined development and delivery.">Automatiza la construcción, pruebas y despliegue de aplicaciones usando una pipeline CI/CD para un desarrollo y entrega eficiente.</p>
+        <a href="https://github.com/Dylalva/Project-CI-CD-Pipeline" target="_blank">Repositorio</a>
       </div>
-
-      <!-- Proyecto 2 -->
       <div class="project-card">
-          <img src="src/images/proyecto_android.jpg" alt="Proyecto 2">
-          <div class="project-info">
-              <h3>App Android - Calendario</h3>
-              <p class="project-description">
-                  Aplicación móvil para crear, editar y sincronizar eventos de un calendario con Firebase en Android.
-                  Hecho con Kotlin, XML, Firebase, Android Studio.
-              </p>
-              <a href="https://github.com/tuusuario/proyecto2" class="button" target="_blank">Ver Código</a>
-          </div>
+        <h3>PacMan AI Game</h3>
+        <p data-es="Juego de PacMan hecho con Python, utilizando algoritmos de búsqueda como A*. Algoritmos de ML como Q-Learning." data-en="PacMan game made with Python, using search algorithms like A*. ML algorithms such as Q-Learning.">Juego de PacMan hecho con Python, utilizando algoritmos de búsqueda como A*. Algoritmos de ML como Q-Learning.</p>
+        <a href="https://github.com/Dylalva/PacMan" target="_blank">Repositorio</a>
       </div>
+    </div>
+  </section>
 
-      <!-- Proyecto 3 -->
+  <!-- Sección Herramientas y Tecnologías -->
+  <section id="tools" class="section tools-section">
+    <h2 data-es="Herramientas y Tecnologías" data-en="Tools & Technologies">Herramientas y Tecnologías</h2>
+    <div class="tools-icons-grid">
+      <div class="tools-group">
+        <h3>Lenguajes</h3>
+        <div class="badges-row">
+          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+          <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+          <img src="https://img.shields.io/badge/PL--SQL-003B57?style=for-the-badge&logo=oracle&logoColor=white" alt="PL/SQL">
+        </div>
+      </div>
+      <div class="tools-group">
+        <h3>Bases de datos</h3>
+        <div class="badges-row">
+          <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle">
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+          <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+          <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase">
+        </div>
+      </div>
+      <div class="tools-group">
+        <h3>Herramientas Data Science</h3>
+        <div class="badges-row">
+          <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda">
+          <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+          <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+          <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+        </div>
+      </div>
+      <div class="tools-group">
+        <h3>Cloud & DevOps</h3>
+        <div class="badges-row">
+          <img src="https://img.shields.io/badge/Azure-0078D7?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
+          <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+          <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
+          <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Otros Proyectos -->
+  <section id="more-projects" class="section more-projects-section">
+    <h2 data-es="Proyectos de Ciencia de Datos" data-en="Data Science Projects">Proyectos de Ciencia de Datos</h2>
+    <div class="projects-grid">
       <div class="project-card">
-          <img src="src/images/portafolio_proyecto.png" alt="Proyecto 3">
-          <div class="project-info">
-              <h3>Portfolio Web</h3>
-              <p class="project-description">
-                  Página web personal con HTML, CSS y JavaScript.
-              </p>
-              <a href="https://github.com/Dylalva/Portafolio-Personal" class="button" target="_blank">Ver Código</a>
-          </div>
+        <img src="src/images/social_media_addiction.jpg" alt="Student Social Media Addiction" class="project-cover">
+        <h3>Student Social Media Addiction</h3>
+        <p data-es="Este proyecto analiza la adicción a redes sociales en estudiantes de varios países y niveles académicos. Se exploran factores como horas de uso, conflictos y salud mental, y se utiliza un modelo Random Forest para predecir el impacto en el rendimiento académico. Instagram y TikTok son las plataformas más populares." data-en="This project analyzes social media addiction among students from various countries and academic levels. Factors such as usage hours, conflicts, and mental health are explored, and a Random Forest model is used to predict academic performance impact. Instagram and TikTok are the most popular platforms.">Este proyecto analiza la adicción a redes sociales en estudiantes de varios países y niveles académicos. Se exploran factores como horas de uso, conflictos y salud mental, y se utiliza un modelo Random Forest para predecir el impacto en el rendimiento académico. Instagram y TikTok son las plataformas más populares.</p>
+        <a href="social_media_addiction.html" class="button main-cta" data-es="Ver más" data-en="See more">Ver más</a>
       </div>
-
-      <!-- Proyecto 4 -->
       <div class="project-card">
-          <img src="src/images/proyecto4.png" alt="Proyecto 4">
-          <div class="project-info">
-              <h3>Juego en Python</h3>
-              <p class="project-description">
-                  Pequeño juego arcade hecho en Python usando Pygame, con sistema de puntuaciones.
-                  Hecho con python, Pycharm.
-              </p>
-              <a href="https://github.com/tuusuario/proyecto4" class="button" target="_blank">Ver Código</a>
-          </div>
+        <img src="src/images/extrovert_vs_introvert.jpg" alt="Extrovertidos vs. Introvertidos" class="project-cover">
+        <h3>Comportamiento de Extrovertidos vs. Introvertidos</h3>
+        <p data-es="Explora un conjunto de datos sobre rasgos de personalidad y comportamiento social. Se utiliza un modelo Random Forest para predecir si una persona es extrovertida o introvertida, analizando variables como estrés social, interacción en redes y tiempo a solas. El modelo logra una clasificación equilibrada y representativa." data-en="Explore a dataset on personality traits and social behavior. A Random Forest model predicts whether a person is extroverted or introverted, analyzing variables such as social stress, network interaction, and time alone. The model achieves balanced and representative classification.">Explora un conjunto de datos sobre rasgos de personalidad y comportamiento social. Se utiliza un modelo Random Forest para predecir si una persona es extrovertida o introvertida, analizando variables como estrés social, interacción en redes y tiempo a solas. El modelo logra una clasificación equilibrada y representativa.</p>
+        <a href="extrovert_vs_introvert.html" class="button main-cta" data-es="Ver más" data-en="See more">Ver más</a>
       </div>
-  </div>
-</div>
+      <div class="project-card">
+        <img src="src/images/steam_2024.jpg" alt="Steam 2024" class="project-cover">
+        <h3>Tienda Steam 2024: Selecciones y Reseñas</h3>
+        <p data-es="Análisis de tendencias, precios y reseñas de los juegos más destacados de Steam en 2024. Se exploran categorías, precios, descuentos y opiniones de la comunidad, permitiendo visualizaciones y análisis de mercado para identificar patrones clave en la industria del gaming." data-en="Analysis of trends, prices, and reviews of the most prominent Steam games in 2024. Categories, prices, discounts, and community opinions are explored, enabling visualizations and market analysis to identify key patterns in the gaming industry.">Análisis de tendencias, precios y reseñas de los juegos más destacados de Steam en 2024. Se exploran categorías, precios, descuentos y opiniones de la comunidad, permitiendo visualizaciones y análisis de mercado para identificar patrones clave en la industria del gaming.</p>
+        <a href="steam_2024.html" class="button main-cta" data-es="Ver más" data-en="See more">Ver más</a>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <div class="contianer--footer">
-      <div class="container_redes-footer">
-          <a href="https://www.linkedin.com/in/mariana-arias-montoya-b37a311a7/" target="_blank">
-              <img src="./src/images/linkedin.png" alt="LinkedIn">
-          </a>
-          <a href="https://github.com/mariasmoUN" target="_blank">
-              <img src="./src/images/github.png" alt="GitHub">
-          </a>
-      </div>
+  <!-- Sección Contacto -->
+  <section id="contact" class="section contact-section">
+    <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+    <div class="contact-badges">
+      <a href="https://www.linkedin.com/in/dylan-elizondo-alvarado-148867324" target="_blank" class="contact-badge linkedin">
+        <img src="src/images/linkedin.png" alt="LinkedIn">LinkedIn
+      </a>
+      <a href="mailto:dylalva1933@gmail.com" class="contact-badge email">
+        Email
+      </a>
+    </div>
+  </section>
 
-      <div class="container_text--footer">
-          <span>Copyright © | 
-          <span>Dylan Elizondo Alvarado</span>
-      </div>
-  </div>
-</footer>
-  <script src="index.js" charset="utf-8"></script>
+  <footer class="footer">
+    <span>&copy; 2025 Dylan Elizondo Alvarado</span>
+  </footer>
+
+  <!-- Scripts para multilenguaje, modo oscuro y animaciones -->
+  <script src="index.js"></script>
 </body>
-
 </html>
