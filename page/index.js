@@ -26,11 +26,11 @@ function setLanguage(lang) {
   const cvBtn = document.getElementById('cv-btn');
   if (cvBtn) {
     if (lang === 'es') {
-      cvBtn.setAttribute('href', 'src/CV_Dylan_Elizondo_ES.pdf');
-      cvBtn.setAttribute('download', 'CV_Dylan_Elizondo_ES.pdf');
+      cvBtn.setAttribute('href', './Resume/DYLAN_ELIZONDO_ALVARADO_CV_ESP.pdf');
+      cvBtn.setAttribute('download', 'DYLAN_ELIZONDO_ALVARADO_CV_ESP.pdf');
     } else {
-      cvBtn.setAttribute('href', 'src/CV_Dylan_Elizondo_EN.pdf');
-      cvBtn.setAttribute('download', 'CV_Dylan_Elizondo_EN.pdf');
+      cvBtn.setAttribute('href', './Resume/DYLAN_ELIZONDO_ALVARADO_CV_ENG.pdf');
+      cvBtn.setAttribute('download', 'DYLAN_ELIZONDO_ALVARADO_CV_ENG.pdf');
     }
   }
   // Traduce la barra de navegación
